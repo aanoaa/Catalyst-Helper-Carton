@@ -58,7 +58,7 @@ carton exec -Ilib -- starman --workers 1 -p 3000 app.psgi
 __test__
 #!/bin/sh
 
-[ -f Makefile ] && make clean
+[ -f Makefile ] && make realclean
 [ -d logs ] && rm -rf logs/
 [ -f checkstyle-result.xml ] && rm -f checkstyle-result.xml
 [ -d cover_db ] && carton exec -Ilib -- cover -delete
